@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+
+  <body>
+    <div id="main">
+
+    <div id="top"></div>
+    <div id="navbar">
+      <h1>WELCOME TO ADMIN PANEL</h1>
+      <p>You can visit the product page by clicking below button.</p>
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+      <a href="/inventory.html"><button id="show_products" >Show product</button></a>
+      
+    </div>
+    <div id="prod-form">
+
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+      <form id="products" onsubmit="add_products(event)">
+      <label for="type">Type</label>
+      <input required type="text" name="type" class="inp" id="type">
+      <label for="desc">Descriptio</label>
+      <input required type="text" name="desc" class="inp" id="desc" >
+      <label for="price">Price</label>
+      <input required type="number" name="price" class="inp" id="price">
+      <label for="image">Image URL</label>
+      <input required type="url" name="image" class="inp" id="image">
+      <input id="sub-b" type="submit" value="Add Product">
+      </form>
+      </form>
+    </div>
+  </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin:100px auto;
+    height: 70vh;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    background-color: #5EE6EB;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+}
+#navbar{
+    width: 50%;
+    background-color: #5EE6EB;
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+#navbar>h1{
+    color: #4D77FF;
+    margin: 60px 20px 20px 20px;
+}
+#navbar>p{
+    padding: 25px 80px 40px;
+    line-height: 2;
+    font-size: 18px;
+    color:#4D77FF;
+}
+#show_products{
+    background-color: #F2FA5A;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 40px;
+    font-size: 24px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+#show_products:hover{
+    cursor: pointer;
+    background-color: #f7ff68;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/* form style starts here */
+#prod-form{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#products{
+    display: flex;
+    flex-direction: column;
+}
+#prod-form>h2{
+    margin: 20px;
+    color: #4D77FF;
+    font-size: 32px;
+}
+/* #prod-form>input{
+    display: inline-block;
+    margin: 20px;
+} */
+label{
+    color: #4D77FF;
+    font-weight: bold;
+}
+
+input{
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 1px solid #5EE6EB;
+    border-radius: 5px;
+
+}
+input:last-child{
+    background-color: #5EE6EB;
+    color: #F2FA5A;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 50px;
+    
+}
+input:last-child:hover{
+    background-color: #34f6fc;
+    cursor: pointer;
+    color: #e8ee6d;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
